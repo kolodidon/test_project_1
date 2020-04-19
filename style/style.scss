@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: Lato;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.text {
+    color: #868585;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.89px;
+    text-align: center;
+}
+
+.navbutton {
+    padding: 22px 40px;
+    a {
+        font-family: Lato;
+        color: #3c3c3c;
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            color: #000;
+        }
+    }
+    &_active a {
+        color: #ada074;
+    }
+}
+
+input,
+textarea {
+    border: none;
+}
+
+.header {
+    background: url(../img/BG-Header.png) no-repeat;
+    background-size: 100%;
+    height: 1075px;
+    width: 100%;
+    &__flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__logo {
+        margin: 165px 0 160px 0;
+    }
+
+    &__text {
+        font-family: "Lato";
+        color: #ffffff;
+    }
+
+    &__title {
+        font-size: 34px;
+        font-weight: 900;
+        letter-spacing: 5.43px;
+        margin: 0 0 20px 0;
+    }
+
+    &__slogan {
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 4.15px;
+        margin: 0 0 280px 0;
+        &:after {
+            content: "";
+            display: block;
+            width: 81px;
+            height: 1px;
+            position: relative;
+            top: 45px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+    }
+
+    &__button {
+        a {
+            color: #fff;
+            text-decoration: none;
+            border: 2px #fff solid;
+            padding: 16px 42px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &__arrow-down {
+        width: 17px;
+        height: 10px;
+        margin: 75px 0 0 0;
+    }
+}
+.navigation {
+    width: 100%;
+    height: 60px;
+
+    &__flex-container {
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.about {
+    margin: 130px auto 0 auto;
+    width: 823px;
+    height: 740px;
+
+    &__flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__upper-flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 70px 0;
+    }
+
+    &__title {
+        font-size: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 73px 0;
+        &:after {
+            content: "";
+            display: block;
+            width: 81px;
+            height: 1px;
+            position: relative;
+            top: 45px;
+            margin: 0 auto;
+            background-color: #000000;
+        }
+    }
+
+    &__lower-flex-container {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 33.333%;
+    }
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+        padding: 30px;
+        border: 1px #727070 solid;
+        border-radius: 50%;
+        margin: 0 0 41px 0;
+    }
+
+    &__icon_web {
+        padding: 32px 35px 28px 25px;
+    }
+
+    &__description-title {
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 3.52px;
+        margin: 0 0 36px 0;
+    }
+
+    &__descritption-text {
+    }
+}
+.portfolio {
+    width: 100%;
+    //min-height: 1671px;
+    background-color: #f3f3f3;
+    padding-bottom: 62px;
+
+    &__flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //margin-bottom: 62px;
+    }
+
+    &__upper-flex-container {
+        margin-top: 107px;
+    }
+
+    &__title {
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 5.43px;
+        text-align: center;
+        margin-bottom: 91px;
+        &:after {
+            content: "";
+            display: block;
+            width: 81px;
+            height: 1px;
+            position: relative;
+            top: 45px;
+            margin: 0 auto;
+            background-color: #000000;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 136px;
+    }
+
+    &__lower-flex-container {
+        width: 1103px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+    }
+
+    &__image {
+        width: 525px;
+        height: 365px;
+        margin: 1%;
+    }
+
+    &__image img {
+        flex-basis: 100px;
+        max-width: 100%;
+    }
+
+    &__button a {
+        color: #000;
+        text-decoration: none;
+        border: 2px #000 solid;
+        padding: 16px 42px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+.partners {
+    width: 100%;
+    height: 400px;
+    background: url(../img/Partners_BG.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    &__flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 1.8px;
+        margin-top: 100px;
+        margin-bottom: 93px;
+    }
+
+    &__lower-flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__icon {
+        padding: 0 55px 0 55px;
+    }
+
+    &__icon img {
+        width: 100%;
+    }
+}
+.contact {
+    width: 100%;
+    height: 825px;
+    padding-top: 185px;
+    padding-bottom: 100px;
+
+    &__flex-container {
+        margin: 0 auto;
+        width: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5.43px;
+        color: #000000;
+        margin-bottom: 165px;
+        &:after {
+            content: "";
+            display: block;
+            width: 81px;
+            height: 1px;
+            position: relative;
+            top: 45px;
+            margin: 0 auto;
+            background-color: #000000;
+        }
+    }
+
+    &__lower-flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__lower-left-flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__name-email-form-container {
+        display: flex;
+        flex-direction: row;
+        margin-right: 80px;
+    }
+
+    &__name-form {
+        width: 161px;
+        flex: 0 1 50%;
+        margin-bottom: 70px;
+        margin-right: 60px;
+    }
+
+    &__email-form {
+        width: 161px;
+        flex: 0 1 50%;
+        margin-bottom: 70px;
+    }
+
+    &__message-form {
+        display: flex;
+        flex-direction: column;
+
+        width: 382px;
+    }
+
+    &__label {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: lato;
+        text-transform: uppercase;
+        width: 100px;
+    }
+
+    .contact__form input {
+        background-color: #f8f7f7;
+        border-top: 1px #000 solid;
+        height: 30px;
+    }
+
+    .contact__form textarea {
+        background-color: #f8f7f7;
+        border-top: 1px #000 solid;
+        width: 395px;
+        height: 120px;
+    }
+
+    &__lower-right-flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    &__lower-right-flex-container p {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+
+    &__lower-right-flex-container b {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: lato;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+    }
+
+    &__icon-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    &__icon {
+        padding-right: 15px;
+    }
+
+    &__icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    p.email {
+        font-size: 16px;
+        font-weight: 700;
+        font-family: lato;
+    }
+
+    &__button {
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    &__button a {
+        font-size: 16px;
+        font-weight: 700;
+        font-family: lato;
+        text-decoration: none;
+        color: #000;
+    }
+}
+.footer {
+    width: 100%;
+    height: 275px;
+    background-color: #3c3c3c;
+    &__flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        margin: 0 auto 0 auto;
+        padding-top: 48px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo {
+        margin-bottom: 41px;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 350px;
+        margin-bottom: 34px;
+    }
+
+    &__navigation-button {
+    }
+
+    &__navigation-button a {
+        color: #a4a4a4;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    &__copyright {
+        color: #6c6c6c;
+        font-family: "Myriad Pro";
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
